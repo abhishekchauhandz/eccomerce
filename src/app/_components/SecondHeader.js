@@ -32,7 +32,7 @@ function SecondHeader({ productInfo }) {
                         <div className="flex items-center gap-2 sm:gap-3">
                             <Link
                                 href="/"
-                                className="hover:text-primary hover:underline"
+                                className="hover:text-primary hover:underline hidden md:flex"
                                 onClick={(e) => {
                                     e.preventDefault();
                                     if (productInfo.category) {
@@ -43,10 +43,10 @@ function SecondHeader({ productInfo }) {
                             >
                                 Home
                             </Link>
-                            <span>/</span>
+                            <span className='hidden md:flex'>/</span>
                             <Link
                                 href="/"
-                                className="hover:text-primary hover:underline"
+                                className="hover:text-primary hover:underline hidden md:flex"
                                 onClick={(e) => {
                                     e.preventDefault();
                                     if (productInfo.category) {
@@ -57,7 +57,7 @@ function SecondHeader({ productInfo }) {
                             >
                                 {formattedCategory}
                             </Link>
-                            <span>/</span>
+                            <span className='hidden md:flex'>/</span>
                             <span className="font-medium text-gray-900 truncate max-w-[120px] sm:max-w-[200px]">
                                 {productInfo.name}
                             </span>
